@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font: 14px "Microsoft YaHei", "Arial";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+
+input {
+    outline: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* 万能清除浮动法 */
+
+.clearfix {
+    *zoom: 1;
+    /*解决IE兼容 */
+}
+
+.clearfix::after {
+    content: ' ';
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}

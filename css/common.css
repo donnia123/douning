@@ -1,0 +1,217 @@
+/* 头部 */
+
+.inner {
+    width: 1090px;
+    margin: 0 auto;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    background: url(../img/big-bg.png) repeat 0 0;
+}
+
+.v-top {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #7f93a9;
+    background: rgba(0, 0, 0, .2);
+}
+
+.v-top-ct {
+    margin-left: 15px;
+}
+
+.v-top-ct>a {
+    color: #00aeff;
+}
+
+.v-top-rt {
+    display: inline-block;
+    float: right;
+}
+
+.v-top-rt>li {
+    display: inline-block;
+}
+
+.v-top-rt>li>a,
+.v-top-rt>li>span {
+    display: inline-block;
+    line-height: 12px;
+    /* 加了这个，分割线不再通栏，但是依旧垂直居中  */
+    padding: 0 10px;
+    border-right: 1px solid #7a92ac;
+}
+
+
+/* .v-top-s {
+    background: url(../img/v-top02.png) no-repeat;
+    background-size: 10px;
+    background-position-x: 100%;
+    background-position-y: 60%;
+    background-origin: content-box;
+} */
+
+#logo-box {
+    height: 150px;
+    position: relative;
+}
+
+.logo {
+    float: left;
+    padding-top: 40px;
+}
+
+.search-box {
+    padding-top: 65px;
+    float: right;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #33669b;
+    width: 250px;
+    height: 20px;
+    padding: 0 10px;
+    color: #c9d8e6;
+    outline: none;
+}
+
+.search-box img {
+    height: 18px;
+    cursor: pointer;
+}
+
+.cart-icon {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.search-box span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #ed871d;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    bottom: 70px;
+}
+
+
+/* 尾部 */
+
+#footer {
+    height: 300px;
+    background: #1a1a1a;
+    color: #a6a6a6;
+    font-size: 12px;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.inner {
+    width: 1090px;
+    margin: 0 auto;
+}
+
+.footer-01 {
+    padding-bottom: 30px;
+    height: 82px;
+    width: 1090px;
+    border-bottom: 1px solid #2c2c2c;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-01 li {
+    height: 51px;
+    line-height: 51px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer-02 {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.footer-02>a,
+.footer-03>a,
+.footer-03>span {
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 20px;
+    border-right: 1px solid #fff;
+    height: 15px;
+    line-height: 15px;
+}
+
+.footer-03 {
+    padding-top: 23px;
+    text-align: center;
+}
+
+.footer-02 a:last-child,
+.footer-03>span {
+    border: 0;
+}
+
+
+/* 右下角回到顶部 */
+
+.back-box {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 160px;
+    border: 1px solid #1f5287;
+    z-index: 99999;
+    background: #002958;
+    font-size: 16px;
+}
+
+.bbox {
+    text-align: center;
+    border-bottom: 1px solid #1f5287;
+}
+
+.bbox1 {
+    line-height: 40px;
+    color: #0fa5f2;
+}
+
+.bbox2 {
+    line-height: 50px;
+    color: #fa8700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.bbox3 {
+    line-height: 50px;
+    color: #b1bcd2;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.bbox3 img {
+    margin: 0 10px;
+}
+
+.bbox4 {
+    line-height: 50px;
+    border: none;
+    color: #b1bcd2;
+}

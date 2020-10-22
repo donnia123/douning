@@ -1,0 +1,346 @@
+body {
+    font: 12px/18px "宋体", arial, sans-serif;
+    color: #585858;
+}
+
+* {
+    box-sizing: content-box;
+}
+
+body,
+div,
+p,
+span,
+form,
+iframe,
+table,
+td,
+th,
+input,
+textarea,
+button,
+label,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+ul,
+ol,
+li,
+dl {
+    list-style-type: none;
+}
+
+em,
+i,
+dfn,
+cite,
+strong,
+small {
+    font-style: normal;
+}
+
+img {
+    border: 0;
+}
+
+fieldset,
+button,
+input,
+select,
+option {
+    vertical-align: middle;
+    font: 12px/18px "宋体", arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+textarea {
+    resize: none
+}
+
+
+/* color */
+
+a:link,
+a:visited {
+    /* color: #575757; */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ef4165;
+    text-decoration: none;
+}
+
+a:active {
+    color: #1d7400;
+}
+
+
+/* clearfix */
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+*html .clearfix {
+    zoom: 1;
+}
+
+.content {
+    width: 1090px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.preview {
+    width: 400px;
+    height: 465px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+
+
+/* smallImg */
+
+.smallImg {
+    position: relative;
+    height: 52px;
+    margin-top: 1px;
+    background-color: #F1F0F0;
+    padding: 6px 5px;
+    width: 390px;
+    overflow: hidden;
+    float: left;
+}
+
+.scrollbutton {
+    width: 14px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+
+.scrollbutton.smallImgUp,
+.scrollbutton.smallImgUp.disabled {
+    background: url(../img/d_08.png) no-repeat;
+}
+
+.scrollbutton.smallImgDown,
+.scrollbutton.smallImgDown.disabled {
+    background: url(../img/d_09.png) no-repeat;
+    margin-left: 375px;
+    margin-top: -50px;
+}
+
+#imageMenu {
+    height: 50px;
+    width: 360px;
+    overflow: hidden;
+    margin-left: 0;
+    float: left;
+}
+
+#imageMenu li {
+    height: 50px;
+    width: 60px;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+}
+
+#imageMenu li img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#imageMenu li#onlickImg img,
+#imageMenu li:hover img {
+    width: 44px;
+    height: 44px;
+    border: 3px solid #959595;
+}
+
+
+/* bigImg */
+
+.bigImg {
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.bigImg #midimg {
+    width: 400px;
+    height: 400px;
+}
+
+.bigImg #winSelector {
+    width: 235px;
+    height: 210px;
+}
+
+#winSelector {
+    position: absolute;
+    cursor: crosshair;
+    filter: alpha(opacity=15);
+    -moz-opacity: 0.15;
+    opacity: 0.15;
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+
+/* bigView */
+
+#bigView {
+    position: absolute;
+    border: 1px solid #959595;
+    overflow: hidden;
+    z-index: 999;
+}
+
+#bigView img {
+    position: absolute;
+}
+
+
+/* 右侧文字 */
+
+.pro-inf {
+    width: 600px;
+    height: 465px;
+    background: #F1F0F0;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    padding: 20px;
+    color: #000;
+}
+
+.pro-inf h2 {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.sp-info {
+    line-height: 30px;
+    font-size: 16px;
+    color: #000;
+    margin: 30px 0 0 0;
+}
+
+.pro-inf .sp-info-val,
+.pro-inf .sp-info-ren {
+    font-size: 24px;
+    color: #FF0036;
+}
+
+.pro-inf .sp-info-specs {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #aaa;
+}
+
+.sp-info input {
+    width: 35px;
+    height: 24px;
+    outline: none;
+    top: -2px;
+}
+
+.jian,
+.add {
+    display: inline-block;
+    border: 1px solid #aaa;
+    font-size: 20px;
+    line-height: 20px;
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.buy-cart {
+    padding-top: 60px;
+    height: 60px;
+}
+
+.buy-cart button {
+    float: left;
+    width: 180px;
+    height: 40px;
+    background: #FF0036;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    margin: 0 60px;
+    cursor: pointer;
+}
+
+.cart-box {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+    z-index: 99999;
+    font-size: 16px;
+}
+
+.pro-num {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #ed871d;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    bottom: 45px;
+}
